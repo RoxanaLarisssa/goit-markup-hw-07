@@ -25,7 +25,6 @@
     <header class="header">
         <div class="container-header-content">
             <a class="header-logo" href=""><span class="header-half-logo">Web</span>Studio</a>
-            <div>
                 <nav class="header-nav">
                     <ul class="header-list">
                         <li><a class="header-link current" href="studio">Studio</a></li>
@@ -33,7 +32,7 @@
                         <li><a class="header-link" href="contacts">Contacts</a></li>
                     </ul>
                 </nav>
-            </div>
+        
             <div class="header-contact">
                 <a class="header-cont-link" href="mailto:info@devstudio.com"> <i data-feather="mail"
                         class="contact-adress-icon"></i>
@@ -43,37 +42,48 @@
                     212-772-4150</a>
 
             </div>
-
-        </div>
-        <button class="menu-button js-open-menu" type="button">
-            <i data-feather="menu"></i></button>
-
-        <!--Mobile Header-->
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="js-close-menu" type="button">
-                <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                    <path fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
+            <button class="header-burger js-open-menu" type="button">
+                <svg width="24" height="24">
+                    <use href="./icons/symbol-defs.svg#icon-th-menu"></use>
                 </svg>
             </button>
-            <div class="mobile-drawer">
-                <nav class="menu-drawer-navigation">
-                    <ul>
-                        <li><a href="studio">Studio</a></li>
-                        <li><a href="./portofolio.html">Portofolio</a></li>
-                        <li><a href="contacts">Contacts</a></li>
-                    </ul>
-                </nav>
+        </div>
+    <!--Mobile Header-->
+    <div class="mobile-container js-menu-container">
+        <button class="mobile-btn-close js-close-menu" type="button">
+            <svg width="12" height="12">
+                <use href="./icons/symbol-defs.svg#icon-cross"></use>
+                </svg>
+            </button>
+        <nav class="mobile-nav">
+            <ul class="mobile-menu list">
+                <li class="mobile-menu-item"><a class="mobile-menu-link link mobile-current" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link link" href>Contacts</a></li>
+            </ul>
+        </nav>
+        <div>
+            <address class="mobile-address">
+                <ul class="mobile-soc list">
+                    <li>
+                        <a class="mobile-tel link" href="tel:+1 212-772-4150"> <span class="mobile-tel-text">+1
+                                212-772-4150</span></a>
+                    </li>
+                    <li>
+                        <a class="mobile-email link" href="mailto:info@devstudio.com"> <span
+                                class="mobile-email-text">info@devstudio.com</span></a>
+                    </li>
+                </ul>
+            </address>
             </div>
-
-            <div class="menu-drawer-contact">
-                <a href="mailto:info@devstudio.com">
-                    info@devstudio.com</a>
-                <a href="tel:+12127724150"> +1
-                    212-772-4150</a>
+            <div class="social-media">
+                <a class="social-media-info" href="https://www.instagram.com"> <span> Instagram </span>
+                    <a class="social-media-info" href="https://www.twitter.com"> <span> Twitter </span>
+                        <a class="social-media-info" href="https://www.facebook.com"> <span> Facebook</span>
+                            <a class="social-media-info" href="https://www.linkedin.com"><span> Linkedin </span>
             </div>
-
         </div>
     </header>
     <main>
