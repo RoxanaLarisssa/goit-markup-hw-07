@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing:"Border-box";
+  box-sizing: border-box;
 }
 
 :root {
@@ -252,7 +252,7 @@ a {
   color: var(--social-background-icon-color);
 }
 
-.book-a-service-btn {
+.book-service-btn {
   display: block;
   align-items: center;
   min-width: 169px;
@@ -266,11 +266,12 @@ a {
   cursor: pointer;
   background-color: var(--social-icon-hover-color);
   color: var(--social-background-icon-color);
+  font-family: var(--text-font-family);
 }
 
 /*-------------Main Services Mobile----------------*/
 .services {
-  padding-top: 94px 0;
+  padding-top: 94px;
 }
 
 .services-list {
@@ -304,7 +305,7 @@ a {
   color: var(--link-color);
   font-size: 14px;
   font-family: var(--text-font-family);
-  line-height: 1, 7;
+  line-height: 1.7;
   letter-spacing: 0.42px;
 
 }
@@ -435,17 +436,27 @@ a {
 }
 .footer-container{
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  max-width: 428px;
+  width: 100%;
 }
 .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 0.78px;
   display: inline-block;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   text-decoration:none;
+}
+.form-text {
+  align-self: center;
 }
 .footer-half-logo {
   color: #2196f3;
@@ -479,6 +490,7 @@ font-size: 14px;
 font-weight: 700;
 letter-spacing: 0.42px;
 text-transform: uppercase;
+text-align: center;
 }
 .footer-soc {
   width: 206px;
@@ -497,12 +509,15 @@ text-transform: uppercase;
  display: flex;
  justify-content: center;
  align-items: center;
- gap: 10px;
+ gap: 16px;
 }
 .footer-item-icons {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   
 }
 .footer-item-icons:hover,
@@ -630,7 +645,7 @@ margin-left: 12px;
   color: #757575;
   font-size: 16px;
   font-family: var(--text-font-family);
-  line-height: 1, 8;
+  line-height: 1.8;
   letter-spacing: 0.48px;
   margin-bottom: 20px;
 }
