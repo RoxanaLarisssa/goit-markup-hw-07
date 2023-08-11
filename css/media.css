@@ -189,40 +189,49 @@ text-align: left;
 
 }
 /*----------Footer--------------*/
-.footer-section {
-  display: block;
-  background-color: #2f303a;
-  padding: 60px 0;
-}
-.footer-container{
+.footer-container {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 72px 24px;
-  width: 584px;
+  max-width: 768px;
   width: 100%;
+  margin-left: 115px;
+
 }
+
 .footer-logo {
-display: inline-block;
+  display: inline-block;
+}
+.footer-soc-text {
+  text-align: left;
 }
 .footer-form-email {
   flex-direction: row;
 }
 .footer-input {
-  width: 450px;
+  width: 387px;
+}
+.form-text {
+  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 .footer-form-btn {
   display: flex;
-  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 94px;
+  margin-top: 20px;
+  width: 200px;
 }
 .modal {
-  width: 450px;
+ width: 450px;
  margin-left: 159px;
-}
-}
+} }
    /*------- Design desktop -------*/
-  @media screen and (min-width: 1158px){
+  @media screen and (min-width: 1158px)
+  {
   .container-header-content {
-    width: 1158px;
     width: 100%;
     margin: 0 auto;
   }
@@ -255,7 +264,6 @@ display: inline-block;
     display: flex;
     gap: 40px;
     flex-direction: row;
-    margin-right: 215px;
   }
   .header-cont-link {
     color: var(--link-color);
@@ -508,24 +516,39 @@ display: inline-block;
 }
 
 /*----------Footer--------------*/
-.footer-container{
+.footer {
+  padding: 100px 0;
+  width: 100%;
+}
+.footer-container {
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
   width: 100%;
+  max-width: 1158px;
 }
-.footer-list {
+
+.footer-soc {
   width: 208px;
   margin-right: 80px;
+  margin-left: 106px;
 }
 .footer-item-icons {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
+  transition-property: background-color;
 
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: #2196f3;
+}
+.footer-form-btn {
+  display: flex;
+}
+.footer-item-icons:hover,
+.footer-item-icons:focus {
+  background-color: var(--social-icon-hover-color);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  color: var(--social-background-icon-color);
 }
 
  }
