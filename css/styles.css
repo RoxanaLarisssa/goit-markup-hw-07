@@ -594,15 +594,13 @@ text-align: center;
 /*!------------------PORTOFOLIO--------------------!*/
 
 .main-portofolio {
-  padding-top: 132px;
-  padding-bottom: 94px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .main-buttons {
   display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 50px;
-  transition: color var(--transition);
+  flex-wrap: wrap;
+  max-width: 280px;
 }
 .portofolio-button {
   font-size: 16px;
@@ -617,6 +615,11 @@ text-align: center;
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+  padding: 8px 16px;
+  line-height: 26px;
+  color: #212121;
+  margin-bottom: 50px;
+  transition: color var(--transition);
 }
 .portofolio-button:hover,
 .portofolio-button:focus {
@@ -628,11 +631,8 @@ text-align: center;
 }
 .portofolio-images {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-bottom: 94px;
-  column-gap: 30px;
-  row-gap: 30px;
+  flex-direction: column;
+  gap: 48px;
 }
 .portofolio-tittle {
   color: #212121;
@@ -642,7 +642,10 @@ text-align: center;
   line-height: 2;
   letter-spacing: 1.08px;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
+
 .portofolio-description {
   color: #757575;
   font-size: 16px;
@@ -650,7 +653,10 @@ text-align: center;
   line-height: 1.8;
   letter-spacing: 0.48px;
   margin-bottom: 20px;
+  margin-left: 100px;
+
 }
+
 .portofolio-box {
   border: 1px solid #eee;
   border-top: none;
@@ -660,6 +666,7 @@ text-align: center;
 .portofolio-box:focus { box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   transition: color var(--transition);
 }
+
 /*...Overlayers Images...*/
 
 .link-portofolio {

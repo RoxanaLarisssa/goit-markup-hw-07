@@ -231,7 +231,36 @@ text-align: left;
 .modal {
  width: 450px;
  margin-left: 159px;
-} }
+} 
+/*----Portofolio----*/
+.main-portofolio {
+  padding-top: 64px;
+}
+.main-buttons {
+  margin-bottom: 64px;
+  max-width: none;
+  justify-content: center;
+  align-items: center;
+}
+.portofolio-button {
+  padding: 12px 24px;
+}
+
+.main-portofolio {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.portofolio-images {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 72px;
+}
+.scroll{   width: calc((100% - 24px) / 2);
+
+}
+}
    /*------- Design desktop -------*/
   @media screen and (min-width: 1158px)
   {
@@ -687,4 +716,24 @@ text-align: left;
   color: var(--social-background-icon-color);
 
 }
+
+/*----Portofolio----*/
+.main-portofolio {
+  padding-top: 132px;
+  padding-bottom: 94px;
+}
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portofolio-images {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.scroll {
+  width: calc((100% - 48px) / 3)
+}
+
  }
