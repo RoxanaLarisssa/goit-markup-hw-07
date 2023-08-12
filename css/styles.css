@@ -307,6 +307,8 @@ a {
   font-family: var(--text-font-family);
   line-height: 1.7;
   letter-spacing: 0.42px;
+   margin-bottom: 60px;
+
 
 }
 /*---What we do Mobile */
@@ -316,7 +318,7 @@ a {
 
 /*--------------TEAM-----------------*/
  .team-section {
-  background: #fff;
+  background:#F5F4FA;
   padding: 96px 0;
 }
 .team-list {
@@ -395,7 +397,7 @@ a {
 }
 
 .customers-tittle {
-  margin-bottom: 72px;
+  margin-bottom: 30px;
   color: var(--brand-color);
   font-size: 36px;
   line-height: 1.11;
@@ -449,7 +451,8 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 0.78px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   margin-bottom: 16px;
   text-decoration:none;
 }
@@ -466,15 +469,17 @@ a {
   font-size: 14px;
   font-family: var(--text-font-family);
   letter-spacing: 0.42px;
+  margin-bottom: 10px;
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-family: var(--text-font-family);
   letter-spacing: 0.42px;
-  margin-bottom: 12px;
   text-decoration:none;
-  gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -507,7 +512,7 @@ text-align: center;
  display: flex;
  justify-content: center;
  align-items: center;
- gap: 16px;
+ gap: 10px;
 }
 .footer-item-icons {
   display: flex;

@@ -195,21 +195,26 @@ text-align: left;
   gap: 72px 24px;
   max-width: 768px;
   width: 100%;
-  margin-left: 115px;
+  margin-left: 80px;
 
 }
-
-.footer-logo {
-  display: inline-block;
+.footer-list {
+  margin-top:20px;
 }
 .footer-soc-text {
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-left: 120px;
+}
+.footer-soc-list {
+  margin-left: 160px;
+  margin-top:10px;
 }
 .footer-form-email {
   flex-direction: row;
 }
 .footer-input {
-  width: 387px;
+  width: 450px;
 }
 .form-text {
   text-align: left;
@@ -220,8 +225,6 @@ text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 94px;
-  margin-top: 20px;
   width: 200px;
 }
 .modal {
@@ -444,7 +447,7 @@ text-align: left;
 }  */
 /*--------------TEAM-----------------*/
 .team-section {
-  background: #fff;
+  background:#F5F4FA;
 }
 .team-list {
   display: flex;
@@ -533,6 +536,13 @@ text-align: left;
   margin-right: 80px;
   margin-left: 106px;
 }
+.footer-soc-text {
+  margin-bottom:10px;
+
+}
+.footer-form-email {
+  margin-left: 93px;
+}
 .footer-item-icons {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -540,7 +550,8 @@ text-align: left;
 
 }
 .footer-form-btn {
-  display: flex;
+  margin-left: 460px;
+  margin-top: -50px;
 }
 .footer-item-icons:hover,
 .footer-item-icons:focus {
