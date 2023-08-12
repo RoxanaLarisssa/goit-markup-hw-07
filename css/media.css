@@ -103,10 +103,11 @@
   }
  
   }
-  .hero-tittle {
-    max-width: 496px;
+  .hero-title {
+    max-width: 400px;
+    margin-bottom: 30px;
     font-size: 26px;
-    line-height: 42px;
+    color: var(--social-background-icon-color);
   }
 
 /*-------------Main Services----------------*/
@@ -267,6 +268,7 @@ text-align: left;
     display: flex;
     gap: 40px;
     flex-direction: row;
+    margin-right: 215px;
   }
   .header-cont-link {
     color: var(--link-color);
@@ -277,6 +279,7 @@ text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
    
   }
   .header-cont-link:hover,
@@ -315,16 +318,17 @@ text-align: left;
       url(../images/background-img-d-2x.jpg);
   }
   }
-  .hero-tittle {
-    max-width: 456px;
-    margin-bottom: 48px;
-  }
   .book-service-btn {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .book-service-btn:hover,
   .book-service-btn:focus {
   background-color: #006994;
+  }
+
+  .hero-title {
+    width: 696px;
+    font-size: 36px;
   }
 /*-------------Main Services----------------*/
 .services {
@@ -549,6 +553,10 @@ text-align: left;
   transition-property: background-color;
 
 }
+.footer-address {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
 .footer-form-btn {
   margin-left: 460px;
   margin-top: -50px;
@@ -561,5 +569,122 @@ text-align: left;
 .footer-form-btn:focus {
   color: var(--social-background-icon-color);
 }
+/*....Modal...*/
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--transition), visibility var(--transition);
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 450px;
+  height: 450px;
+  padding: 40px;;
+  border-radius: 4px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition);
+  transform: translate(-50%, -50%) scaleY(1);
+}
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.close-btn {
+  border: 5px solid white;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% ;
+  background: #FFF;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: color var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn:hover,
+.close-btn:focus {
+  border: none;
+  fill: #FFF;
+  background: #006994;
+}
+
+
+/*----- Modal----- */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;;
+  border-radius: 4px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition);
+  transform: translate(-50%, -50%) scaleY(1);
+}
+
+.form-tittle {
+  color: #212121;
+  text-align: center;
+  font-family: var(--text-font-family);
+  font-size: 20px;
+  letter-spacing: 0.6px;
+}
+.label-comment {
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.4em;
+  resize: none;
+  transition: border-color var(--transition);
+}
+.checkbox-label {
+  line-height: 1.17;
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+}
+.send {
+  display: block;
+  align-self: center;
+  min-width: 169px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--text-font-family);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: var(--social-icon-hover-color);
+  color: var(--social-background-icon-color);
+
+}
  }
